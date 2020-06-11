@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Poisson</title>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="escom barra-re">
+           <h1>Distibuciones</h1>
+        </div>
+    </section>
+
+    <div class="container text-center">
+        <div class="register">
+            <form class="col-12">
+                <h2>Problema de Distribución de Poisson</h2><br>
+                <p>Los cambios en los procedimientos de los aeropuertos requieren una planeación considerable. 
+                    Los índices de llegadas de los aviones son factores importantes que deben tomarse en cuenta. 
+                    Suponga que los aviones pequeños llegan a cierto aeropuerto, de acuerdo con un proceso de Poisson, 
+                    con una frecuencia de 6 por hora. De esta manera, el parámetro de Poisson para las llegadas en un 
+                    periodo de horas es μ = 6t.</p><br>
+                <h6><b>DONDE:</b></h6>
+                <p><b>"X"</b>= Número de aviones; <b>"μ"</b>= Parametro de Poisson en hrs.</p>
+                <p>En cada inciso deberá agregar el valor de <b>"X"</b> y <b>"μ"</b></p>
+                
+                
+                <ol type="a">
+                    <div class="inciso-a">
+                        <li><h5>¿Cuál es la probabilidad de que lleguen exactamente "X" aviones pequeños durante un periodo de una hora?</h5></li>
+                    </div><br>
+                    <p>La formula a utilizar es:</p>
+                    <img src="static/imagenes/poison.png">
+                    <div class="form-group">
+                        <input type="text" id="x1"  placeholder="Valor de X"/>
+                        <input type="text" id="u1"  placeholder="Valor de μ"/>
+                        <br><button id="uno" class="btn btn-dark" ><i class="fas fa-sign-in-alt"></i>  Resolver </button>
+                     </div><br>
+
+                    <div class="inciso-b">
+                        <li><h5>¿Cuál es la probabilidad de que lleguen al menos 4 durante un periodo de una hora?</h5></li>
+                    </div><br>
+                    <p>Este inciso no se resuleve de manera directa, lo que debemos hacer es lo siguiente:</p>
+                    <img src="static/imagenes/poison2.png">
+                    <div class="form-group">
+                        <input type="text" id="x2"  placeholder="Valor de X0"/>
+                        <input type="text" id="x3"  placeholder="Valor de X1"/>
+                        <input type="text" id="x4"  placeholder="Valor de X2"/>
+                        <input type="text" id="x5"  placeholder="Valor de X3"/>
+                        <input type="text" id="u2"  placeholder="Valor de μ"/>
+                        <br> <button id="dos" class="btn btn-dark"><i class="fas fa-sign-in-alt"></i>  Resolver </button>
+                    </div><br>
+                </ol>
+            </form>
+            <form class="col-12">
+                <h2>Problema de Distribución Geometrica</h2><br>
+                <p>Se sabe que 3% de las personas a las que se les revisa el equipaje en un aeropuerto lleva objetos cuestionables.</p><br>
+                <h6><b>DONDE:</b></h6>
+                <p><b>"p"</b>= Probabilidad dada; <b>"X"</b>= número de personas </p>
+                <p>En cada inciso deberá agregar el valor de <b>"X"</b> y <b>"P"</b></p>
+                
+                
+                <ol type="a">
+                    <div class="inciso-a">
+                        <li><h5>¿Cuál es la probabilidad de que una serie de 15 personas cruce sin problemas antes de 
+                            que se atrape a una con un objeto cuestionable?</h5></li>
+                    </div><br>
+                    <p>La formula a utilizar es:</p>
+                    <img src="static/imagenes/geometrica.png">
+                    <div class="form-group">
+                        <input type="text" id="p1"  placeholder="Valor de p"/>
+                        <input type="text" id="x01"  placeholder="Valor de x"/>
+                        <br><button id="tres" class="btn btn-dark" ><i class="fas fa-sign-in-alt"></i>  Resolver </button>
+                     </div><br>
+
+                    <div class="inciso-b">
+                        <li><h5>¿Cuál es el numero esperado de personas que pasaran antes de que se detenga a una?</h5></li>
+                    </div><br>
+                    <p>Este inciso no se resuleve de manera directa, lo que debemos hacer es lo siguiente:</p>
+                    <img src="static/imagenes/geo.png">
+                    <div class="form-group">
+                        <input type="text" id="p2"  placeholder="Valor de p"/>
+                        <br> <button id="cuatro" class="btn btn-dark"><i class="fas fa-sign-in-alt"></i>  Resolver </button>
+                    </div><br>
+                </ol>
+            </form>
+
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html> 
